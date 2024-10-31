@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DJ's Portfolio</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <div class="wrap">
       <header>
+        <!-- 왼쪽에 로고 -->
         <a href="index.html" class="logo en"
           ><span class="en2">D.jun</span>Portfolio</a
         >
+
+        <!-- 오른쪽에 메뉴 -->
         <nav class="gnb en">
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="#" data-splitting>About</a>
+            </li>
+            <li><a href="#" data-splitting>Work</a></li>
+            <li><a href="#" data-splitting>Contact</a></li>
           </ul>
         </nav>
+
+        <!-- 햄버거 메뉴, 모바일에서만 보임 -->
         <a href="#" class="menuOpen"
           ><span class="a"></span><span class="b"></span
         ></a>

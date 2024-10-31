@@ -116,7 +116,7 @@ header {
   left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 100;
+  z-index: 100; /* 가장 위에 올라오게 함 */
   padding: 30px 60px;
   box-sizing: border-box;
   display: flex;
@@ -125,6 +125,8 @@ header {
 header .logo {
   color: white;
 }
+
+/* 모바일 햄버거 메뉴 */
 header .menuOpen {
   display: none;
   transition: 0.3s;
@@ -141,4 +143,38 @@ header .menuOpen {
 
 .gnb ul li a {
   display: block;
+}
+
+/* gnb 호버 효과 */
+.gnb ul li a .char {
+  display: inline-block;
+  position: relative;
+  color: transparent;
+  overflow: hidden;
+}
+
+.gnb ul li a .char:before,
+.gnb ul li a .char:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  color: #fff;
+  content: attr(data-char);
+  transition: transform 0.35s;
+  transition-delay: calc(30ms * var(--char-index));
+}
+
+.gnb ul li a .char:before {
+  transform: translateY(100%);
+}
+
+.gnb ul li a:hover .char:before {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.gnb ul li a:hover .char:after {
+  transform: translateY(-100%);
+  opacity: 0;
 }
