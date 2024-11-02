@@ -108,6 +108,9 @@ body {
   overflow: hidden;
   background: black;
   color: white;
+
+  /*임시*/
+  margin-bottom: 3000px;
 }
 
 header {
@@ -121,7 +124,15 @@ header {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
 }
+
+/* header 태그 자체가 active 클래스를 가지고 있을 때를 선택 */
+
+header.active {
+  transform: translateY(-100%);
+}
+
 header .logo {
   color: white;
 }
@@ -177,4 +188,43 @@ header .menuOpen {
 .gnb ul li a:hover .char:after {
   transform: translateY(-100%);
   opacity: 0;
+}
+
+.visual {
+  width: 100%;
+  height: 100vh;
+  padding-top: 125px;
+  box-sizing: border-box;
+  position: relative;
+  letter-spacing: -1px;
+}
+
+.visual .mainText {
+  font-size: 140px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0px 0px 150px 60px;
+  display: inline-block;
+}
+
+.visual .mainText p {
+  overflow: hidden;
+}
+
+.visual .subText {
+  margin-top: -80px;
+  margin-left: 20%;
+}
+
+.visual .scroll {
+  position: fixed;
+  left: 60px;
+  bottom: 40px;
+}
+
+.visual .svgAni {
+  position: absolute;
+  top: 8%;
+  right: 0%;
+  width: 60%;
 }
