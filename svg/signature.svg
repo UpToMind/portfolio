@@ -1,0 +1,75 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <!-- 전체 그룹을 회전 -->
+            <g
+              transform="translate(200, 150) rotate(-30) translate(-150, -100)"
+            >
+              <!-- D 부분 -->
+              <path
+                id="d"
+                d="
+                M 50,140 
+                C 50,80 50,60 50,40
+                Q 120,40 140,70
+                C 160,100 160,130 140,160
+                Q 120,180 50,140
+                "
+                fill="none"
+                stroke="#FFFFFF"
+                stroke-width="12"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+              <!-- 점(.) -->
+              <circle id="point" cx="180" cy="140" r="8" fill="#FFFFFF" />
+
+              <!-- j -->
+              <path
+                id="j"
+                d="
+                M 220,80
+                C 220,120 220,160 210,180
+                Q 200,190 190,180
+                "
+                fill="none"
+                stroke="#FFFFFF"
+                stroke-width="12"
+                stroke-linecap="round"
+              />
+              <!-- j의 점 -->
+              <circle id="jpoint" cx="220" cy="50" r="8" fill="#FFFFFF" />
+
+              <!-- u -->
+              <path
+                id="u"
+                d="
+                M 250,80
+                C 250,100 250,120 250,140
+                
+                C 250,160 270,160 280,140
+                C 285,130 285,110 285,80
+                "
+                fill="none"
+                stroke="#FFFFFF"
+                stroke-width="12"
+                stroke-linecap="round"
+              />
+
+              <!-- n -->
+              <path
+                id="n"
+                d="
+                M 320,140
+                C 320,120 320,100 320,80
+                
+                C 320,90 330,100 340,100
+                C 350,100 360,100 360,120
+                C 360,130 360,140 360,140
+                "
+                fill="none"
+                stroke="#FFFFFF"
+                stroke-width="12"
+                stroke-linecap="round"
+              />
+            </g>
+          </svg>
